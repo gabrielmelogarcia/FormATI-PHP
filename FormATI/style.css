@@ -1,0 +1,209 @@
+
+/* CSSs GERAIS DA PÁGINA */
+
+/* FONTE DE TODO O FORMULÁRIO */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: #e5e5e5;
+    color: #333;
+    display: flex;  /* Aqui ele vai centralizar tudo */
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* LOGO ATI E TODO O CABEÇALHO */
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 13px 0;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 6px #0000001a;
+    border-bottom: 5px solid transparent; 
+        border-image: linear-gradient(
+        to right,
+        #0c4a73,
+        #007bff,
+        #b82930,
+        #d91f27,
+        #148f45, 
+        #44a848,
+        #f5bd17
+    ) 1;
+}
+
+nav {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex; /* Para centralizar a logo da ATI */
+    justify-content: center;
+    align-items: center;
+}
+
+    /* LOGO ATI */
+#logo-img { 
+    display: block;
+    max-height: 100px;
+    width: auto;
+}
+
+#logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORMULÁRIO E TODAS AS PARTES */
+
+main {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;   /* Cor da caixa do formulário */
+    padding: 40px; 
+    border-radius: 0 px;
+    margin: 0 16px; /* Margem para organização dos diferentes tipos de tela */
+    box-shadow: 0 8px 16px #00000026;
+}
+
+main h2 { /* Esse é o título do formulário */
+    text-align: center;
+    color: #222;
+    margin-bottom: 8px; 
+    font-weight: 600;
+}
+
+main p { /* Esse é o subtítulo do formulário */
+    text-align: center;
+    margin-bottom: 32px; 
+    color: #666;
+}
+
+/* CSSs DAS INPUTS TYPES */
+
+/* Espaçamento dos campos*/
+form div {   
+    margin-bottom: 24px; 
+}
+
+form > br {
+    display: none;
+}
+
+/*LABELS*/
+form label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: 500;
+    color: #555;
+}
+
+/* CSSs DAS INPUTSTYPES */
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 14px 16px; 
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px; 
+    color: #333;
+}
+
+
+form input::placeholder, /* (Exemplos dentro das InputsTypes) */
+form textarea::placeholder {
+    color: #aaa;
+}
+
+form input:focus, /* CSSs para quando clica na Input */
+form textarea:focus {
+    outline: none;
+    border-color: #0c4a73;
+    box-shadow: 0 0 8px #007bff1a;
+;
+}
+
+/* CAIXA DE TEXTO PARA OBS */
+form textarea {
+    resize: vertical; /* Para ter o redimensionamento */
+    min-height: 100px;
+}
+
+/* INPUT DE ENVIO DO FORMULÁRIO  */
+form button {
+    width: 100%;
+    padding: 16px; 
+    border: none;
+    border-radius: 8px;
+    background-color: #0c4a73;
+    color: white;
+    font-size: 16px; 
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* QUANDO PASSAR O CURSOR PELO BOTÃO DE ENVIO */
+form button:hover {
+    background-color: #146596;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #ffffff; 
+    color: #f0f0f0; 
+    padding: 30px 20px;
+    margin-top: 50px; 
+    text-align: center;
+    border-top: 5px solid transparent; 
+        border-image: linear-gradient(
+        to right,
+        #0c4a73,
+        #007bff,
+        #b82930,
+        #d91f27,
+        #148f45, 
+        #44a848,
+        #f5bd17
+    ) 1;
+}
+
+/* O footer com as informações */
+
+.footer-ati {
+    max-width: 900px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* ESPAÇAMENTO */
+}
+
+.logof-ati {
+    height: 60px; 
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.direitos-ati {
+    font-size: 14px;
+    color: #0c4a73;
+    padding-top: 10px;
+    border-top: 1px solid #0c4a7334; /* Uma linha só pra separar a logo dos direitos */
+    width: 100%;
+}
