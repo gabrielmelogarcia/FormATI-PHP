@@ -111,9 +111,9 @@ FormATI/
 ## 🚀 Desenvolvido com foco em usabilidade e segurança
 
 - ✅ Validação client-side para melhor UX
-- ✅ Suporte a CORS para requisições de diferentes origens
 - ✅ Responsivo e acessível
 - ✅ Tratamento de erros adequado
 
 ---
+
 
